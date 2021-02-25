@@ -1,14 +1,17 @@
 {
     "sqltools.connections": [
         {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
             "previewLimit": 50,
-            "server": "pgsql",
-            "port": 5432,
-            "driver": "PostgreSQL",
+            "server": "mysql",
+            "port": 3306,
+            "driver": "MySQL",
             "name": "local",
             "database": "sistema",
             "username": "root",
-            "password": "secret"
+            "password": ""
         }
     ]
 }

@@ -15,7 +15,7 @@ class UserDataTable extends LivewireDatatable
     public function columns()
     {
         return [
-            NumberColumn::name('id')->filterable(),
+            NumberColumn::name('id'),
 
             Column::name('name')->filterable()->searchable(),
 
@@ -23,6 +23,9 @@ class UserDataTable extends LivewireDatatable
 
             DateColumn::name('created_at')->filterable(),
 
+            Column::callback(['id', 'name'], function ($id, $name) {
+                return view('user-data-table', ['id' => $id, 'name' => $name]);
+            })->label('Actions')
            
         ];
     }
