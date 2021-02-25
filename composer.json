@@ -18,7 +18,8 @@
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.0",
         "mediconesystems/livewire-datatables": "dev-master",
-        "orangehill/iseed": "^3.0"
+        "orangehill/iseed": "^3.0",
+        "spatie/laravel-permission": "^4.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
