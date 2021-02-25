@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class UsersTableSeeder extends Seeder
@@ -350,7 +351,15 @@ class UsersTableSeeder extends Seeder
                 'two_factor_recovery_codes' => NULL,
             ),
         ));
-        
-        
+
+        $user = User::find(1);
+        $user->assignRole('administrador');
+
+        $user = User::find(2);
+        $user->assignRole('cajera');
+
+        $user = User::find(3);
+        $user->assignRole('entregas');
+
     }
 }
