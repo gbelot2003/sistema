@@ -1,4 +1,5 @@
 <div>
+    
     <div class="warp">
         <div class="warp-table">
             <div class="relative sm:col-span-2 md:col-span-3 lg:col-span-2">
@@ -45,7 +46,7 @@
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                 </div>
             </div>
-            <button class="bg-indigo-800 text-white text-xs font-semibold py-2 rounded-md border-0">Add Schedule</button>
+            <button wire:click.prevent="OpenshowEditModal" class="bg-indigo-800 text-white text-xs font-semibold py-2 rounded-md border-0">Add Schedule</button>
         </div>
         <table class="table">
             <thead>
@@ -117,6 +118,39 @@
         <div class="mt-2">
             {!! $users->links() !!}
         </div>
-        
     </div>
+
+    {{-- Users Modal --}}
+    <x-jet-dialog-modal wire:model="showEditModal">
+        <x-slot name="title">
+            Edit Users
+        </x-slot>
+    
+        <x-slot name="content">
+            <div class="mt-4">
+                <label for="name">Name</label>
+                <x-jet-input class="block mt-1 w-full" type="text" name="name" required />
+            </div>
+
+            <div class="mt-4">
+                <label for="email">Email</label>
+                <x-jet-input class="block mt-1 w-full" type="email" name="email" required />
+            </div>
+
+            
+
+            
+        </x-slot>
+    
+        <x-slot name="footer">
+            <x-jet-secondary-button wire:click="$toggle('showEditModal')" wire:loading.attr="disabled">
+                {{ __('Cancel') }}
+            </x-jet-secondary-button>
+    
+            <x-jet-button class="ml-2" wire:loading.attr="disabled">
+                Submit
+            </x-jet-button>
+        </x-slot>
+    </x-jet-dialog-modal>
 </div>
+
