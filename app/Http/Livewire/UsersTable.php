@@ -19,6 +19,7 @@ class UsersTable extends Component
     {
         return view('livewire.users-table', [
             'users' => User::search($this->search)
+                ->with('roles')
                 ->orderBy($this->orderBy, $this->orderAsc ? 'asc' : 'desc')
                 ->paginate($this->perPage),
         ]);
