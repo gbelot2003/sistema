@@ -34,6 +34,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-24 21:02:20',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 1,
             ),
             1 => 
             array (
@@ -49,6 +50,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-24 21:48:19',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 1,
             ),
             2 => 
             array (
@@ -64,6 +66,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:03',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 1,
             ),
             3 => 
             array (
@@ -79,6 +82,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:03',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 1,
             ),
             4 => 
             array (
@@ -94,6 +98,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:03',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 1,
             ),
             5 => 
             array (
@@ -109,6 +114,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:04',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 0,
             ),
             6 => 
             array (
@@ -124,6 +130,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:04',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 0,
             ),
             7 => 
             array (
@@ -139,6 +146,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:04',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 0,
             ),
             8 => 
             array (
@@ -154,6 +162,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:04',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 0,
             ),
             9 => 
             array (
@@ -169,6 +178,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:04',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 0,
             ),
             10 => 
             array (
@@ -184,6 +194,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:04',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 0,
             ),
             11 => 
             array (
@@ -199,6 +210,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:04',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 0,
             ),
             12 => 
             array (
@@ -214,6 +226,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:05',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 0,
             ),
             13 => 
             array (
@@ -229,6 +242,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:05',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 0,
             ),
             14 => 
             array (
@@ -244,6 +258,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:05',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 0,
             ),
             15 => 
             array (
@@ -259,6 +274,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:05',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 0,
             ),
             16 => 
             array (
@@ -274,6 +290,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:05',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 1,
             ),
             17 => 
             array (
@@ -289,6 +306,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:05',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 1,
             ),
             18 => 
             array (
@@ -304,6 +322,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:06',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 1,
             ),
             19 => 
             array (
@@ -319,6 +338,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:06',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 1,
             ),
             20 => 
             array (
@@ -334,6 +354,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:06',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 1,
             ),
             21 => 
             array (
@@ -349,6 +370,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-02-25 00:03:06',
                 'two_factor_secret' => NULL,
                 'two_factor_recovery_codes' => NULL,
+                'status' => 1,
             ),
         ));
 
