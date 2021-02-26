@@ -54,6 +54,7 @@
                     <th>Name</th>
                     <th>Email</th>
                     <th>Roles</th>
+                    <th>State</th>
                     <th>Created At</th>
                     <td>Actions</td>
                 </tr>
@@ -65,9 +66,20 @@
                         <td>{{ $user->name }}</td>
                         <td>{{ $user->email }}</td>
                         <td>
-                            @foreach ($user->roles as $rol)
-                            <span class="border border-gray-300 text-gray-600 text-xs font-semibold rounded-2xl py-1 px-4">{{ $rol->name }}</span>
-                            @endforeach
+                            @if(!$user->roles->isEmpty())
+                                @foreach ($user->roles as $rol)
+                                <span class="border border-gray-300 text-gray-600 text-xs font-semibold rounded-2xl py-1 px-4">{{ $rol->name }}</span>
+                                @endforeach
+                            @else
+                            <span class="bg-yellow-100 text-yellow-600 text-xs font-semibold rounded-2xl py-1 px-4">N/A</span>
+                            @endif
+                        </td>
+                        <td>
+                            @if($user->status == 1)
+                            <span class="bg-indigo-100 text-indigo-600 text-xs font-semibold rounded-2xl py-1 px-4">Active</span>
+                            @else
+                            <span class="bg-yellow-100 text-yellow-600 text-xs font-semibold rounded-2xl py-1 px-4">Inactive</span>
+                            @endif
                         </td>
                         <td>{{ $user->created_at->diffForHumans() }}</td>
                         <td>
