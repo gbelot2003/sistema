@@ -19,7 +19,8 @@
         "livewire/livewire": "^2.0",
         "mediconesystems/livewire-datatables": "dev-master",
         "orangehill/iseed": "^3.0",
-        "spatie/laravel-permission": "^4.0"
+        "spatie/laravel-permission": "^4.0",
+        "te7a-houdini/laravel-trix": "dev-master"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
