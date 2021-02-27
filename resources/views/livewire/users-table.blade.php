@@ -97,7 +97,7 @@
                                     </svg>
                                 </button>
     
-                                <button class="border-2 border-indigo-200 rounded-md p-1">
+                                <button wire:click="updateShowModal({{ $user->id }})" class="border-2 border-indigo-200 rounded-md p-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4 text-indigo-500">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
                                     </svg>
@@ -123,22 +123,36 @@
     {{-- Users Modal --}}
     <x-jet-dialog-modal wire:model="showEditModal">
         <x-slot name="title">
-            Edit Users
+            Edit User
         </x-slot>
     
         <x-slot name="content">
             <div class="mt-4">
                 <label for="name">Name</label>
-                <x-jet-input class="block mt-1 w-full" type="text" name="name" required />
+                <x-jet-input wire:model="name" class="block mt-1 w-full" type="text" name="name" required />
+                @error('name') <span class="text-red-900">{{ $message }}</span> @enderror
             </div>
 
             <div class="mt-4">
                 <label for="email">Email</label>
-                <x-jet-input class="block mt-1 w-full" type="email" name="email" required />
+                <x-jet-input wire:model="email" class="block mt-1 w-full" type="email" name="email" required />
+                @error('email') <span class="text-red-900">{{ $message }}</span> @enderror
             </div>
 
-            
 
+            <div class="mt-4">
+                <label for="email">Rol</label>
+                <select class="block w-full">
+                    @foreach($roles as $rol)
+                        @if($urol)
+                        <option value="{{ $rol->id }}" {{ $urol == $rol->id ? 'selected' : '' }}>{{ $rol->name }}</option>
+                        @else
+                        <option value="{{ $rol->id }}">{{ $rol->name }}</option>
+                        @endif
+                    @endforeach
+                </select>
+            </div>
+            @error('rol') <span class="text-red-900">{{ $message }}</span> @enderror
             
         </x-slot>
     
