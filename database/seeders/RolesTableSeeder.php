@@ -21,8 +21,10 @@ class RolesTableSeeder extends Seeder
 
         $roles = [
             'administrador',
-            'cajera',
-            'entregas'
+            'editor',
+            'padre',
+            'maestro',
+            'alumno'
         ];
 
         $permissionsAdmin = [
